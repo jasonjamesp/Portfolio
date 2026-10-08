@@ -409,6 +409,30 @@
     }
 
     /* ==========================================================================
+       EXPERIENCE SECTION
+       ========================================================================== */
+    .exp-section {
+      padding: 6rem 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 3rem;
+    }
+
+    .exp-card {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 6px;
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ==========================================================================
        EDUCATION & CERTIFICATIONS SECTION
        ========================================================================== */
     .edu-section {
@@ -464,14 +488,17 @@
       text-transform: uppercase;
     }
 
-    .timeline-school {
+    .timeline-school,
+    .timeline-role {
       font-size: 1.1rem;
       font-weight: 700;
     }
 
-    .timeline-degree {
+    .timeline-degree,
+    .timeline-desc {
       font-size: 0.95rem;
       color: var(--text-muted);
+      line-height: 1.6;
     }
 
     .cert-list {
@@ -708,6 +735,7 @@
       }
 
       .section-works,
+      .exp-section,
       .edu-section,
       .skills-section,
       .achieve-section,
@@ -737,16 +765,16 @@
   <header>
     <a href="#" class="brand">
       <div class="logo-badge">JJ</div>
-      <span>JASON JAMES PHILIP <span style="font-size: 0.8rem;">®</span></span>
-      <span class="brand-sub">// B.Tech IT Student</span>
+      <span>JASON JAMES PHILIP <span style="font-size: 0.8rem;"></span></span>
+      <span class="brand-sub">| Undergraduate Information Technology Student</span>
     </a>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#education">Education & Certs</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#achievements">Achievements</a>
-      <a href="#contact" class="btn-pill">Let's Talk</a>
     </nav>
   </header>
 
@@ -756,20 +784,15 @@
   <section class="hero" id="about">
     <div>
       <div class="hero-meta">
-        <span class="badge">B.Tech IT • Semester 7</span>
-        <span>•</span>
-        <span>Rajagiri School of Eng. & Tech (RSET)</span>
-        <span>•</span>
-        <span>CGPA: 8.2</span>
+        <span class="badge">Student | Developer | Athlete</span>
       </div>
       <h1 class="hero-title">
-        Engineering Generative AI, RAG platforms, and intelligent full-stack systems <span>with precision and
-          performance.</span>
+        <span>Hi, I'm Jason — Building intelligent systems at the intersection of Edge AI, embedded tech, and full-stack
+          software.</span>
       </h1>
       <p class="hero-bio">
         A motivated, full-time 7th semester B. Tech student in IT at RSET seeking an internship to apply and expand my
-        skills in a dynamic development environment. Experienced with LLM integration, Flutter development, and
-        full-stack web architectures.
+        skills in a dynamic development environment.
       </p>
     </div>
 
@@ -791,7 +814,7 @@
 
   <!-- ==========================================================================
        MARQUEE TICKER
-       ========================================================================== -->
+       ========================================================================== 
   <div class="marquee-wrap">
     <div class="marquee">
       JASON JAMES PHILIP <span>*</span> B.TECH IT @ RSET <span>#</span> HACKS'US 1ST PRIZE WINNER <span>™</span>
@@ -801,7 +824,7 @@
       GENERATIVE AI & RAG <span>//</span> FLUTTER & MERN STACK <span>•</span> GSSOC 2026 <span>®</span> DEVFEST KOCHI
       <span>*</span>
     </div>
-  </div>
+  </div> -->
 
   <!-- ==========================================================================
        PROJECTS / SELECTED WORKS
@@ -809,10 +832,9 @@
   <section class="section-works" id="projects">
     <div class="section-header">
       <div>
-        <div class="section-label">(Portfolio® — Featured Engineering)</div>
-        <h2 class="section-title">Selected Projects</h2>
+        <!-- <div class="section-label">(Portfolio® — Featured Engineering)</div> -->
+        <h2 class="section-title">Projects</h2>
       </div>
-      <span class="section-label">/ AI, Web & Mobile /</span>
     </div>
 
     <div class="projects-list">
@@ -928,21 +950,64 @@
   </section>
 
   <!-- ==========================================================================
+       EXPERIENCE
+       ========================================================================== -->
+  <section class="exp-section" id="experience">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Experience</h2>
+      </div>
+    </div>
+
+    <div class="exp-grid">
+      <!-- Experience Column (Single Column) -->
+      <div class="exp-card">
+        <h3 class="sub-heading">Experience</h3>
+
+        <div class="timeline-item">
+          <span class="timeline-dates">Jan 2026 – Present</span>
+          <div class="timeline-school">Open Source Contributor — GirlScript Summer of Code (GSSoC)</div>
+          <div class="timeline-degree">
+            Selected for GSSoC 2026 to contribute to open-source software repositories. Collaborating with maintainers
+            and developer communities on bug fixes, feature modules, and real-world web implementations.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dates">Jun 2024 – Aug 2024</span>
+          <div class="timeline-school">Software Engineering Intern — Tech Startup / Organization</div>
+          <div class="timeline-degree">
+            Engineered full-stack applications and mobile features with Flutter, React, and Node.js. Integrated LLM and
+            Gemini API workflows with RAG architectures for intelligent data retrieval.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dates">Sep 2023 – Present</span>
+          <div class="timeline-school">Technical Lead & Core Committee Volunteer — RSET</div>
+          <div class="timeline-degree">
+            Organized and facilitated student technical initiatives, including the "Git Started" workshop for GitHub
+            fundamentals and the SWI{F}TF cybersecurity capture-the-flag (CTF) competition.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
        EDUCATION & CERTIFICATIONS
        ========================================================================== -->
   <section class="edu-section" id="education">
     <div class="section-header">
       <div>
-        <div class="section-label">(Academic & Qualifications)</div>
         <h2 class="section-title">Education & Certifications</h2>
       </div>
-      <span class="section-label">Verified Track Record</span>
     </div>
 
     <div class="edu-grid">
       <!-- Education Column -->
       <div class="edu-card">
-        <h3 class="sub-heading">🎓 Education</h3>
+        <h3 class="sub-heading">Education</h3>
 
         <div class="timeline-item">
           <span class="timeline-dates">Sep 2023 – Present</span>
@@ -968,7 +1033,7 @@
 
       <!-- Certifications Column -->
       <div class="cert-card">
-        <h3 class="sub-heading">📜 Certifications</h3>
+        <h3 class="sub-heading">Certifications</h3>
 
         <div class="cert-list">
           <div class="cert-item">
@@ -1014,10 +1079,8 @@
   <section class="skills-section" id="skills">
     <div class="section-header">
       <div>
-        <div class="section-label">(Technical Toolkit)</div>
-        <h2 class="section-title">Skills & Capabilities</h2>
+        <h2 class="section-title">Skills</h2>
       </div>
-      <span class="section-label">Core Competencies</span>
     </div>
 
     <div class="skills-grid">
@@ -1100,34 +1163,32 @@
   <section class="achieve-section" id="achievements">
     <div class="section-header">
       <div>
-        <div class="section-label">(Leadership & Milestones)</div>
-        <h2 class="section-title">Achievements, Workshops & Volunteering</h2>
+        <h2 class="section-title">Achievements & Volunteering</h2>
       </div>
-      <span class="section-label">Beyond the Code</span>
     </div>
 
     <div class="achieve-grid">
       <!-- Achievements Card -->
       <div class="achieve-card">
-        <h3 class="sub-heading">🏆 Key Achievements</h3>
+        <h3 class="sub-heading">Key Achievements</h3>
         <ul class="achieve-list">
           <li class="achieve-item">
-            <span class="achieve-icon">🥇</span>
+            <span class="achieve-icon"></span>
             <div><strong>1st Prize Winner @ HACKS'US Edition V:</strong> (National level Hackathon) in the software
               engineering track by developing an AI-Powered Intelligent Interview Agent.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">🏅</span>
+            <span class="achieve-icon"></span>
             <div><strong>Sports Medals:</strong> Won several medals in sports events including an individual
               championship trophy.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">⭐</span>
+            <span class="achieve-icon"></span>
             <div><strong>Academic Excellence Awards:</strong> Recipient of annual academic excellence awards for
               consistent high performance throughout school.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">👑</span>
+            <span class="achieve-icon"></span>
             <div><strong>Leadership:</strong> Responsibly held the posts of School Student Council Prefect & College
               Football Club secretary demonstrating good leadership.</div>
           </li>
@@ -1136,29 +1197,29 @@
 
       <!-- Workshops & Volunteer Card -->
       <div class="achieve-card">
-        <h3 class="sub-heading">⚡ Workshops & Volunteer Work</h3>
+        <h3 class="sub-heading">Workshops & Volunteer Work</h3>
         <ul class="achieve-list">
           <li class="achieve-item">
-            <span class="achieve-icon">🚀</span>
+            <span class="achieve-icon"></span>
             <div><strong>GSSoC 2026:</strong> Selected for GSSoC 2026, contributing to open-source projects and
               collaborating with experienced developers on real-world applications.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">🌐</span>
+            <span class="achieve-icon"></span>
             <div><strong>DevFest Kochi 2025:</strong> Attended DevFest Kochi 2025 by Google Developer Groups.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">🏗️</span>
+            <span class="achieve-icon"></span>
             <div><strong>CONFLUENCE:</strong> Participated in CONFLUENCE, India's largest Industry-Academia Summit to
               gain exposure to real-world technology and innovation ecosystems.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">🛠️</span>
+            <span class="achieve-icon"></span>
             <div><strong>Core Committee Volunteer:</strong> Organized & facilitated a "Git Started" Workshop for GitHub
               fundamentals and SWI{F}TF, a cybersecurity Capture The Flag Challenge event.</div>
           </li>
           <li class="achieve-item">
-            <span class="achieve-icon">🤝</span>
+            <span class="achieve-icon"></span>
             <div><strong>Community Tutor:</strong> Tutored IGCSE Physics & Maths at Hilla Community Center (UNHCR aided
               school, KL) focusing on conceptual clarity & effective application.</div>
           </li>
@@ -1169,14 +1230,14 @@
 
   <!-- ==========================================================================
        CALL TO ACTION
-       ========================================================================== -->
+       ========================================================================== 
   <section class="cta-section" id="contact">
     <div class="section-label">(Let's Connect)</div>
-    <!-- <p class="cta-sub">Ready to collaborate on innovative AI & software solutions?</p> -->
+    <!-- <p class="cta-sub">Ready to collaborate on innovative AI & software solutions?</p> 
     <a href="mailto:jasjames.11@gmail.com" class="cta-btn-large">
       Get In Touch <span>↗</span>
     </a>
-  </section>
+  </section> -->
 
   <!-- ==========================================================================
        FOOTER
